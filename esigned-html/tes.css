@@ -1,0 +1,42 @@
+body {
+  background-color: #ffffff;
+}
+section {
+  display: flex;
+  margin: auto;
+  height: 100vh;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.title {
+  font-size: 100px;
+}
+
+.hovering ul {
+  display: flex;
+  gap: 1rem;
+  text-decoration: none;
+}
+.hovering ul li {
+  list-style: none;
+  position: relative;
+}
+.hovering ul li img {
+  width: 300px;
+  height: auto;
+  visibilty: hidden;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+  transform: scale(0);
+}
+.hovering ul li:hover img {
+  visibilty: visible;
+  transform: scale(1);
+}
+.hovering ul li span {
+  cursor: pointer;
+}
